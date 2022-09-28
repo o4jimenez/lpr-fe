@@ -151,11 +151,11 @@ i18n
               title: "Order Summary",
               total: "Total",
               // eslint-disable-next-line no-template-curly-in-string
-              delivery: "includes ${{price}} delivery cost",
+              delivery: "Delivery cost not included",
             },
             customerInfo: {
               title: "Customer Information",
-              message: "Order is NOT confirmed until follow up call",
+              message: "We will call to confirm the order",
               call: {
                 label: "Preferred Call Time",
                 morning: "Morning",
@@ -290,7 +290,7 @@ i18n
               phone: "Tele",
               email: "Email",
               address: "Dirección de Entregar",
-              message: "Mesage",
+              message: "Mensaje",
               submit: "Enviar",
             },
             call: "Llama o Envía texto",
@@ -302,12 +302,11 @@ i18n
               title: "Resumen de Orden",
               total: "Total",
               // eslint-disable-next-line no-template-curly-in-string
-              delivery: "incluye ${{price}} coste de entrega",
+              delivery: "Costo de entrega no incluido",
             },
             customerInfo: {
               title: "Información del Cliente",
-              message:
-                "El pedido NO se confirma hasta la llamada de seguimiento",
+              message: "Llamaremos para confirmar el pedido",
               call: {
                 label: "Hora de llamada preferida",
                 morning: "Mañana",

@@ -18,7 +18,14 @@ function Contact() {
             <FormInput name='phone' type='text' />
             <FormInput name='email' type='text' />
             <FormInput name='address' type='text' />
-            <FormInput name='message' type='text' />
+            <label label htmlFor='message'>
+              {t("contact.form.message")}
+            </label>
+            <textarea
+              className='contact-message'
+              name='message'
+              rows='5'
+            ></textarea>
             <div className='form-submit'>
               <button className='flat-button'>
                 {t("contact.form.submit")}

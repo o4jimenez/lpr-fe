@@ -7,7 +7,6 @@ const OrderSummary = ({ itemList }) => {
   //console.log("Order summary render");
   const { t } = useTranslation();
 
-  let deliveryCost = 10;
   let itemTotalCost = itemList.reduce(
     (total, item) => total + item.itemCost * item.itemQuantity,
     0
@@ -37,9 +36,9 @@ const OrderSummary = ({ itemList }) => {
           })}
         </ul>
         <p className='summary-total'>
-          Total: ${itemTotalCost ? itemTotalCost + deliveryCost : 0}
+          Total: ${itemTotalCost ? itemTotalCost : 0}
         </p>
-        <p>- {t("orderform.summary.delivery", { price: deliveryCost })}</p>
+        <p>- {t("orderform.summary.delivery")}</p>
       </section>
     </div>
   );
