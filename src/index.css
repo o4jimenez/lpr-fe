@@ -1,0 +1,428 @@
+/*
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+:root {
+  --text-major: "Dosis", arial, sans-serif;
+  --text-main: "Montserrat", verdana, sans-serif;
+
+  --background: hsl(60, 30%, 96%);
+  --secondarybackground: hsl(0, 0%, 90%);
+
+  --primarycolor: hsl(338, 65%, 47%);
+  --secondarycolor: hsl(234, 53%, 44%);
+  --accentcolor: hsl(37, 96%, 59%);
+  --dimaccentcolor: hsl(50, 96%, 59%);
+
+
+  --font-size: 1.3rem;
+  --phone-width: 400px;
+  --tablet-width: 840px;
+  ;
+  --desktop-width: 1260px;
+  --max-screen: 1200px;
+}
+
+/* General */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  min-width: 360px;
+
+  background-color: var(--background);
+
+  font-family: var(--text-main);
+  font-size: var(--font-size);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* Banner */
+
+.banner-container {
+  background-color: var(--accentcolor);
+}
+
+.banner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 3px 10px;
+  font-size: 70%;
+}
+
+.banner a {
+  color: black;
+}
+
+.banner p {
+  margin: 0.25rem;
+}
+
+@media (min-width: 720px) {
+  .banner {
+    max-width: 1280px;
+    margin: auto;
+    padding: 3px 40px;
+  }
+}
+
+/* Navigation */
+
+.nav-container {
+  background-color: var(--secondarycolor);
+}
+
+nav {
+  padding: 0.5rem;
+}
+
+nav ul,
+footer ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+
+  font-family: var(--text-major);
+  text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
+  color: var(--primarycolor);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dimaccentcolor);
+  display: block;
+}
+
+nav a:focus,
+nav a:hover {
+  color: var(--accentcolor);
+}
+
+.current-page {
+  text-decoration: underline;
+}
+
+@media (min-width: 720px) {
+  nav {
+    margin: 0 auto;
+    padding: 1rem 40px;
+    max-width: 1280px;
+  }
+
+  nav ul {
+    column-gap: 2rem;
+    align-items: center;
+  }
+
+  nav li:first-child {
+    text-align: left;
+    flex-basis: auto;
+    margin-right: auto;
+    font-size: 120%;
+  }
+}
+
+/* Main */
+
+main {
+  padding: 20px 40px;
+}
+
+#home-image {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.main-text {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.main-text h2 {
+  font-family: var(--text-major);
+  font-size: 3rem;
+  color: var(--primarycolor);
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 0 1rem;
+  margin-top: auto;
+}
+
+.section-socials h2 {
+  padding: 10px 0px;
+}
+
+/* Item Grid */
+
+.section-header {
+  font-family: var(--text-major);
+  color: var(--primarycolor);
+  text-align: center;
+  font-size: 2.2rem;
+  border-bottom: solid 3px var(--secondarycolor);
+  padding: 10px 0px;
+
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.item {
+  margin: auto;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+@media (min-width: 720px) {
+
+  .item-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1040px) {
+  .item-grid {
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Item Figures */
+
+
+.item-image {
+  width: 300px;
+  height: 300px;
+  margin-bottom: -5px;
+  border: 2px solid var(--accentcolor);
+}
+
+.item-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 300px;
+  padding: 10px 10px;
+
+  border: 2px solid var(--accentcolor);
+  border-top: 0;
+
+}
+
+.item-name {
+  width: 100%;
+  text-align: center;
+  /*
+  color: rgb(0, 100, 200);
+  */
+  color: var(--secondarycolor);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item-description {
+  flex-basis: 75%;
+  flex-shrink: 1;
+  font-size: 80%;
+}
+
+.item-cost {
+  font-weight: bold;
+  color: red;
+  flex-basis: 25%;
+  flex-shrink: 2;
+  text-align: end;
+}
+
+.item-cost-sc {
+  font-weight: bold;
+  color: red;
+
+}
+
+.inCart {
+  border: 5px;
+  border-style: solid;
+  border-color: var(--secondarycolor);
+  border-radius: 5px;
+}
+
+.addCartButton {
+  text-align: center;
+}
+
+/* Rental Order Form */
+
+.order-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 5px;
+  border: 5px solid var(--secondarycolor);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order-form {
+  max-width: 400px;
+}
+
+.order-section {
+  padding: 10px;
+  min-width: 350px;
+}
+
+/* Contact Form */
+.form-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding: 20px;
+}
+
+.form-input {
+  display: flex;
+  flex-flow: column;
+}
+
+
+input {
+  background-color: rgb(224, 224, 224);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 10px 0px;
+
+  padding: 10px 5px;
+}
+
+.form-submit {
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.flat-button {
+  margin: 10px 0px;
+  padding: 10px 30px;
+  background-color: rgb(0, 100, 200);
+  border-radius: 5px;
+  color: white;
+  border: 0px;
+  font-size: 1.2rem;
+}
+
+.catalog-button {
+  background-color: rgb(224, 224, 224);
+  color: black;
+}
+
+.company-info {
+  color: rgb(0, 100, 200);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 4rem 0;
+}
+
+.summary-total {
+  color: rgb(0, 100, 200);
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
