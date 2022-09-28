@@ -2,10 +2,6 @@
 import { t } from "i18next";
 import FormInput from "./FormInput";
 
-const containerStyle = {
-  padding: "10px",
-};
-
 const OrderForm = ({ itemList }) => {
   //console.log("Order form render");
 
@@ -24,17 +20,59 @@ const OrderForm = ({ itemList }) => {
   });
 
   return (
-    <div className='orderForm-container order-section' style={containerStyle}>
+    <div className='orderForm-container order-section'>
       <section className='order-form'>
         <h2>{t("orderform.customerInfo.title")}</h2>
-        <form id='orderForm' method='POST'>
+        <form
+          id='orderForm'
+          action='https://formsubmit.co/o4jimenez@outlook.com'
+          method='POST'
+        >
           <FormInput name='clientName' type='text' />
           <FormInput name='date' type='date' />
           <FormInput name='phone' type='text' />
           {/* TODO: autocomplete address input system*/}
           <FormInput name='address' type='text' />
 
-          {/*TODO: best time to call (input)*/}
+          <div id='call-preference'>
+            <label>{t("orderform.customerInfo.call.label")}</label>
+            <div className='checkboxes-container'>
+              <div>
+                <label htmlFor='call-morn'>
+                  {t("orderform.customerInfo.call.morning")}
+                </label>
+                <input
+                  id='call-morn'
+                  name='call-morn'
+                  type='checkbox'
+                  value=''
+                ></input>
+              </div>
+              <div>
+                <label htmlFor='call-after'>
+                  {t("orderform.customerInfo.call.afternoon")}
+                </label>
+                <input
+                  id='call-after'
+                  name='call-after'
+                  type='checkbox'
+                  value=''
+                ></input>
+              </div>
+              <div>
+                <label htmlFor='call-even'>
+                  {t("orderform.customerInfo.call.evening")}
+                </label>
+                <input
+                  id='call-even'
+                  name='call-even'
+                  type='checkbox'
+                  value=''
+                ></input>
+              </div>
+            </div>
+          </div>
+
           <input
             id='itemlist'
             name='itemlist'
@@ -43,7 +81,7 @@ const OrderForm = ({ itemList }) => {
             hidden
           />
 
-          <p>* Order is NOT confirmed until you recieve a call from us</p>
+          <p>* Order is NOT confirmed until follow up call</p>
           <button className='flat-button' type='submit'>
             {t("contact.form.submit")}
           </button>

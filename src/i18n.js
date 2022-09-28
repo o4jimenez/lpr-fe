@@ -139,11 +139,10 @@ i18n
               phone: "Phone",
               email: "Email",
               address: "Delivery Address",
-              city: "City",
-              zipcode: "ZIP",
               message: "Message",
-              submit: "Submit",
+              submit: "Send",
             },
+            call: "Call or Text",
           },
           orderform: {
             addItem: "Add to Cart",
@@ -156,6 +155,12 @@ i18n
             },
             customerInfo: {
               title: "Customer Information",
+              call: {
+                label: "Preferred Call Time",
+                morning: "Morning ",
+                afternoon: "Afternoon ",
+                evening: "Evening ",
+              },
             },
           },
         },
@@ -164,7 +169,7 @@ i18n
         translation: {
           nav: {
             homePage: "Principal",
-            rentalPage: "Mercancias",
+            rentalPage: "Mercancías",
             contactPage: "Contactar",
             languageSwitch: "In English",
           },
@@ -283,10 +288,11 @@ i18n
               date: "Fecha de Evento",
               phone: "Tele",
               email: "Email",
-              address: "Direccion de Entregar",
+              address: "Dirección de Entregar",
               message: "Mesage",
               submit: "Enviar",
             },
+            call: "Llama o Envía texto",
           },
           orderform: {
             addItem: "Agregar al Carrito",
@@ -299,6 +305,12 @@ i18n
             },
             customerInfo: {
               title: "Información del Cliente",
+              call: {
+                label: "Hora de llamada preferida",
+                morning: "Mañana ",
+                afternoon: "Tarde ",
+                evening: "Noche ",
+              },
             },
           },
         },

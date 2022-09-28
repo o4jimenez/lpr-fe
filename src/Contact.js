@@ -26,6 +26,10 @@ function Contact() {
             </div>
           </form>
         </section>
+        <section className='company-info'>
+          <h2>{t("contact.call")}</h2>
+          <p>(805) 915-7089</p>
+        </section>
       </div>
     </main>
   );

@@ -426,3 +426,13 @@ input {
   font-size: 1.5rem;
 
 }
+
+#call-preference {
+  text-align: center;
+}
+
+.checkboxes-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
