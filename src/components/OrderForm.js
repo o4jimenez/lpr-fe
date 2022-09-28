@@ -1,9 +1,10 @@
 //
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import FormInput from "./FormInput";
 
 const OrderForm = ({ itemList }) => {
   //console.log("Order form render");
+  const { t } = useTranslation();
 
   // TODO: send data from form and item list to backend
   /*
@@ -23,6 +24,7 @@ const OrderForm = ({ itemList }) => {
     (total, item) => total + item.itemCost * item.itemQuantity,
     0
   );
+
   return (
     <div className='orderForm-container order-section'>
       <section className='order-form'>
@@ -88,11 +90,11 @@ const OrderForm = ({ itemList }) => {
             id='total'
             name='total'
             value={itemTotalCost}
-            hidden
             readOnly
+            hidden
           />
 
-          <p>* Order is NOT confirmed until follow up call</p>
+          <p>* {t("orderform.customerInfo.message")}</p>
           <button className='flat-button' type='submit'>
             {t("contact.form.submit")}
           </button>

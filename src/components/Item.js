@@ -27,7 +27,9 @@ const ItemListInput = ({ itemInfo }) => {
         // Jumper items use different input type from other types of items
         isUnique ? (
           <button
-            className='flat-button catalog-button'
+            className={`flat-button catalog-button ${
+              quantity > 0 ? "inCart" : ""
+            }`}
             value={quantity === 0 ? 1 : 0}
             onClick={handleItemInput}
           >
@@ -43,6 +45,7 @@ const ItemListInput = ({ itemInfo }) => {
             min='0'
             placeholder='0'
             onChange={handleItemInput}
+            className={quantity > 0 ? "inCart" : ""}
           ></input>
         )
       }

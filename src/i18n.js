@@ -155,6 +155,7 @@ i18n
             },
             customerInfo: {
               title: "Customer Information",
+              message: "Order is NOT confirmed until follow up call",
               call: {
                 label: "Preferred Call Time",
                 morning: "Morning ",
@@ -305,6 +306,8 @@ i18n
             },
             customerInfo: {
               title: "Información del Cliente",
+              message:
+                "El pedido NO se confirma hasta la llamada de seguimiento",
               call: {
                 label: "Hora de llamada preferida",
                 morning: "Mañana ",

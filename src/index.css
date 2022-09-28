@@ -436,3 +436,7 @@ input {
   flex-flow: row;
   justify-content: space-between;
 }
+
+.inCart {
+  background-color: var(--dimaccentcolor);
+}
