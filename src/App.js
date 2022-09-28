@@ -11,19 +11,13 @@ import Contact from "./Contact";
 function App() {
   //console.log("App render");
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navigator />
 
       <Routes>
-        <Route
-          path={process.env.PUBLIC_URL + "/rentals"}
-          element={<Rentals />}
-        />
-        <Route
-          path={process.env.PUBLIC_URL + "/contact_us"}
-          element={<Contact />}
-        />
-        <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
+        <Route path={"/rentals"} element={<Rentals />} />
+        <Route path={"/contact_us"} element={<Contact />} />
+        <Route path={"/"} element={<Home />} />
       </Routes>
       <Footer />
     </Router>

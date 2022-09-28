@@ -21,7 +21,7 @@ i18n
             homePage: "Home",
             rentalPage: "Rentals",
             contactPage: "Contact Us",
-            languageSwitch: "En Espanol",
+            languageSwitch: "En Español",
           },
           home: {
             greeting: "Welcome to Louis Party Rental",
