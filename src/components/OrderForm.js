@@ -19,6 +19,10 @@ const OrderForm = ({ itemList }) => {
     return `${itemName} : ${item.itemQuantity}`;
   });
 
+  let itemTotalCost = itemList.reduce(
+    (total, item) => total + item.itemCost * item.itemQuantity,
+    0
+  );
   return (
     <div className='orderForm-container order-section'>
       <section className='order-form'>
@@ -79,6 +83,13 @@ const OrderForm = ({ itemList }) => {
             value={JSON.stringify(formattedList)}
             readOnly
             hidden
+          />
+          <input
+            id='total'
+            name='total'
+            value={itemTotalCost}
+            hidden
+            readOnly
           />
 
           <p>* Order is NOT confirmed until follow up call</p>
