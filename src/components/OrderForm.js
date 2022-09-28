@@ -44,7 +44,7 @@ const OrderForm = ({ itemList }) => {
             <label>{t("orderform.customerInfo.call.label")}</label>
             <div className='checkboxes-container'>
               <div>
-                <label htmlFor='call-morn'>
+                <label className='checkbox-label' htmlFor='call-morn'>
                   {t("orderform.customerInfo.call.morning")}
                 </label>
                 <input
@@ -52,10 +52,11 @@ const OrderForm = ({ itemList }) => {
                   name='call-morn'
                   type='checkbox'
                   value=''
+                  className='call-checkbox'
                 ></input>
               </div>
               <div>
-                <label htmlFor='call-after'>
+                <label className='checkbox-label' htmlFor='call-after'>
                   {t("orderform.customerInfo.call.afternoon")}
                 </label>
                 <input
@@ -63,10 +64,11 @@ const OrderForm = ({ itemList }) => {
                   name='call-after'
                   type='checkbox'
                   value=''
+                  className='call-checkbox'
                 ></input>
               </div>
               <div>
-                <label htmlFor='call-even'>
+                <label className='checkbox-label' htmlFor='call-even'>
                   {t("orderform.customerInfo.call.evening")}
                 </label>
                 <input
@@ -74,6 +76,7 @@ const OrderForm = ({ itemList }) => {
                   name='call-even'
                   type='checkbox'
                   value=''
+                  className='call-checkbox'
                 ></input>
               </div>
             </div>
