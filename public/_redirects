@@ -1,0 +1,6 @@
+# Redirects from what the browser request to what we server
+
+/home /index.html
+/index /index.html
+/rentals /index.html
+/contact_us /index.html
