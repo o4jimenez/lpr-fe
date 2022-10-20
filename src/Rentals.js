@@ -252,15 +252,15 @@ function Rentals() {
   }, []);
 
   return (
-    <ItemListContext.Provider value={onChange}>
-      <main>
+    <main>
+      <ItemListContext.Provider value={onChange}>
         <div id='catalog'>{loadCatalog}</div>
-        <div className='order-container'>
-          <OrderSummary itemList={itemList} />
-          <OrderForm itemList={itemList} />
-        </div>
-      </main>
-    </ItemListContext.Provider>
+      </ItemListContext.Provider>
+      <div className='order-container'>
+        <OrderSummary itemList={itemList} />
+        <OrderForm itemList={itemList} />
+      </div>
+    </main>
   );
 }
 
