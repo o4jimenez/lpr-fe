@@ -1,3 +1,6 @@
 # Redirects from what the browser request to what we server
 
-/\* /index.html 200
+/home /
+/index /
+/rentals /
+/contact_us /
