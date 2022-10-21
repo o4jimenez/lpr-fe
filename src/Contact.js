@@ -12,7 +12,11 @@ function Contact() {
         <section className='email-form'>
           <h2 className='section-header'>Email</h2>
           <label className='section-header'></label>
-          <form id='contact-form'>
+          <form
+            id='contact-form'
+            action='https://formsubmit.co/o4jimenez@outlook.com'
+            method='POST'
+          >
             <FormInput name='clientName' type='text' />
             <FormInput name='date' type='date' />
             <FormInput name='phone' type='text' />

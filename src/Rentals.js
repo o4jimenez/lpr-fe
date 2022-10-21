@@ -185,7 +185,7 @@ function Rentals() {
             },
           },
           {
-            imageUrl: "/image/tent_12X30.jpeg",
+            imageUrl: "/image/tent_12x30.jpeg",
             itemInfo: {
               itemNumber: 312,
               itemCost: 125,
