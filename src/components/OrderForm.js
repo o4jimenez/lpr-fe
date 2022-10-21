@@ -31,7 +31,7 @@ const OrderForm = ({ itemList }) => {
         <h2>{t("orderform.customerInfo.title")}</h2>
         <form
           id='orderForm'
-          action='https://formsubmit.co/o4jimenez@outlook.com'
+          action='https://formsubmit.co/60d1aa45d556a34594c8c74ace8e8295'
           method='POST'
         >
           <FormInput name='clientName' type='text' />
