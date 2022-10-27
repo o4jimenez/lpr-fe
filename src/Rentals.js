@@ -72,7 +72,7 @@ function Rentals() {
             imageUrl: "/image/jumper_combo.jpeg",
             itemInfo: {
               itemNumber: 131,
-              itemCost: 100,
+              itemCost: 110,
               itemInventory: 1,
             },
           },
