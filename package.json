@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:move": "sudo rm -r /var/www/louispartyrental/build && cp -r build /var/www/louispartyrental/build",
+    "build:move": "sudo rm -r /var/www/louispartyrental/build/* && cp -r build /var/www/louispartyrental/",
     "format": "prettier --write \"src/**/*.{js,jsx}\" ",
     "server": "json-server -p3001 --watch db.json",
     "deploy": "npm run build && npm run build:move"

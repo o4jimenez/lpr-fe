@@ -40,7 +40,7 @@ function Rentals() {
             imageUrl: "/image/jumper_blue_11.jpeg",
             itemInfo: {
               itemNumber: 111,
-              itemCost: 60,
+              itemCost: 65,
               itemInventory: 1,
             },
           },
@@ -48,7 +48,7 @@ function Rentals() {
             imageUrl: "/image/jumper_blue_13.jpeg",
             itemInfo: {
               itemNumber: 112,
-              itemCost: 60,
+              itemCost: 65,
               itemInventory: 1,
             },
           },
@@ -56,7 +56,7 @@ function Rentals() {
             imageUrl: "/image/jumper_pink_11.jpeg",
             itemInfo: {
               itemNumber: 121,
-              itemCost: 60,
+              itemCost: 65,
               itemInventory: 1,
             },
           },
@@ -64,7 +64,7 @@ function Rentals() {
             imageUrl: "/image/jumper_pink_13.jpeg",
             itemInfo: {
               itemNumber: 122,
-              itemCost: 60,
+              itemCost: 65,
               itemInventory: 1,
             },
           },
@@ -80,7 +80,7 @@ function Rentals() {
             imageUrl: "/image/jumper_jungle.jpeg",
             itemInfo: {
               itemNumber: 141,
-              itemCost: 60,
+              itemCost: 65,
               itemInventory: 1,
             },
           },
@@ -88,7 +88,7 @@ function Rentals() {
             imageUrl: "/image/jumper_sport.jpeg",
             itemInfo: {
               itemNumber: 142,
-              itemCost: 60,
+              itemCost: 65,
               itemInventory: 1,
             },
           },
@@ -150,7 +150,7 @@ function Rentals() {
             imageUrl: "/image/table_cocktail.jpeg",
             itemInfo: {
               itemNumber: 215,
-              itemCost: 8,
+              itemCost: 9,
               itemInventory: 5,
             },
           },
