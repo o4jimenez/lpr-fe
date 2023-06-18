@@ -49,7 +49,7 @@ i18n
             },
             121: {
               itemName: "Pink Castle #1",
-              itemDescription: "Pink Castle #2",
+              itemDescription: "11ft W x 11ft L",
             },
             122: {
               itemName: "Pink Castle #2",
@@ -57,7 +57,7 @@ i18n
             },
             131: {
               itemName: "Combo Slide",
-              itemDescription: "6ft W x 24ft L",
+              itemDescription: "16ft W x 24ft L",
             },
             141: {
               itemName: "Jungle",
