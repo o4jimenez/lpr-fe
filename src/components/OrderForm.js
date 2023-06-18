@@ -34,7 +34,7 @@ const OrderForm = ({ itemList }) => {
           method='POST'
           action='/'
           data-netlify='true'
-          name="rentalOrder'
+          name="orderForm'
         >
           <FormInput name='clientName' type='text' />
           <FormInput name='date' type='date' />
