@@ -33,9 +33,11 @@ const OrderForm = ({ itemList }) => {
           id='orderForm'
           method='POST'
           action='/'
-          data-netlify='true'
           name='orderForm'
+          netlify
+          netlify-honeypot
         >
+          <input type='hidden' name='form-name' value='rentalorder'/>
           <FormInput name='clientName' type='text' />
           <FormInput name='date' type='date' />
           <FormInput name='phone' type='text' />
