@@ -7,6 +7,7 @@ const OrderForm = ({ itemList }) => {
   const { t } = useTranslation();
 
   // TODO: send data from form and item list to backend
+  /*
   const encode = (data) => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -22,8 +23,8 @@ const OrderForm = ({ itemList }) => {
     .catch(error => alert(error));
     
     e.preventDefault();
-  
   }
+  */
 
 
   const formattedList = itemList.map((item) => {
@@ -43,11 +44,7 @@ const OrderForm = ({ itemList }) => {
         <form
           id='orderForm'
           method='post'
-          action='/'
-          name='orderForm'
-          onSubmit={handleSubmit}
         >
-          <input type='hidden' name='form-name' value='orderForm'/>
           <FormInput name='clientName' type='text' />
           <FormInput name='date' type='date' />
           <FormInput name='phone' type='text' />
