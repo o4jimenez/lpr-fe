@@ -12,7 +12,7 @@ const OrderForm = ({ itemList }) => {
     fetch("/", {
       method: "POST",
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
-      body: encode({"form-name", "orderForm", ...this.state})
+      body: encode({"form-name": "orderForm", ...this.state})
     })
     .then(() => alert("Success!"))
     .catch(error => alert(error));
@@ -43,7 +43,7 @@ const OrderForm = ({ itemList }) => {
           name='orderForm'
           onSubmit={this.handleSubmit}
         >
-          <input type='hidden' name='form-name' value='rentalorder'/>
+          <input type='hidden' name='form-name' value='orderForm'/>
           <FormInput name='clientName' type='text' />
           <FormInput name='date' type='date' />
           <FormInput name='phone' type='text' />
