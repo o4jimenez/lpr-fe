@@ -45,7 +45,7 @@ const OrderForm = ({ itemList }) => {
           method='post'
           action='/'
           name='orderForm'
-          onSubmit={this.handleSubmit}
+          onSubmit={handleSubmit}
         >
           <input type='hidden' name='form-name' value='orderForm'/>
           <FormInput name='clientName' type='text' />
