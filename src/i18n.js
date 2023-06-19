@@ -65,7 +65,7 @@ i18n
             },
             142: {
               itemName: "Sports",
-              itemDescription: "13ft W x 13ft L",
+              itemDescription: "11ft W x 11ft L",
             },
             151: {
               itemName: "Waterslide",
@@ -73,7 +73,7 @@ i18n
             },
             211: {
               itemName: "Rectangular Tables",
-              itemDescription: "6ftx2ft",
+              itemDescription: "6ft x 2ft",
             },
             212: {
               itemName: "Large Round Table",
@@ -81,7 +81,7 @@ i18n
             },
             213: {
               itemName: "Small Round Table",
-              itemDescription: "8 in, seats up to 6",
+              itemDescription: "48 in, seats up to 6",
             },
             214: {
               itemName: "Kids Table",
@@ -216,7 +216,7 @@ i18n
             },
             142: {
               itemName: "Deportes",
-              itemDescription: "13 pies x 13 pies",
+              itemDescription: "11 pies x 11 pies",
             },
             151: {
               itemName: "Tobogán de agua",
