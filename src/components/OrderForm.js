@@ -9,7 +9,7 @@ const OrderForm = ({ itemList }) => {
   // TODO: send data from form and item list to backend
   const encode = (data) => {
     return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
   }
   function handleSubmit(e) {
