@@ -7,13 +7,20 @@ const OrderForm = ({ itemList }) => {
   const { t } = useTranslation();
 
   // TODO: send data from form and item list to backend
-  /*
+  
   function handleSubmit(e) {
+    fetch("/", {
+      method: "POST",
+      headers: {"Content-Type": "application/x-www-form-urlencoded"},
+      body: encode({"form-name", "orderForm", ...this.state})
+    })
+    .then(() => alert("Success!"))
+    .catch(error => alert(error));
+    
     e.preventDefault();
-    console.log(e.target.elements.itemlist.value);
-    console.log("submitted");
+  
   }
-  */
+
 
   const formattedList = itemList.map((item) => {
     let itemName = t(`catalog.${item.itemNumber}.itemName`);
@@ -31,11 +38,10 @@ const OrderForm = ({ itemList }) => {
         <h2>{t("orderform.customerInfo.title")}</h2>
         <form
           id='orderForm'
-          method='POST'
+          method='post'
           action='/'
           name='orderForm'
-          netlify
-          netlify-honeypot
+          onSubmit={this.handleSubmit}
         >
           <input type='hidden' name='form-name' value='rentalorder'/>
           <FormInput name='clientName' type='text' />
