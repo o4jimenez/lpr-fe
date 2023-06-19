@@ -155,7 +155,7 @@ i18n
             },
             customerInfo: {
               title: "Customer Information",
-              message: "We will call to confirm the order",
+              message: "We will text or call to confirm the order",
               call: {
                 label: "Preferred Call Time",
                 morning: "Morning",
@@ -306,7 +306,7 @@ i18n
             },
             customerInfo: {
               title: "Información del Cliente",
-              message: "Llamaremos para confirmar el pedido",
+              message: "Enviamos mensaje o llamada para confirmar el pedido",
               call: {
                 label: "Hora de llamada preferida",
                 morning: "Mañana",
