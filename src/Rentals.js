@@ -142,7 +142,7 @@ function Rentals() {
             imageUrl: "/image/table_chair_kids.jpeg",
             itemInfo: {
               itemNumber: 223,
-              itemCost: 0.5,
+              itemCost: 1,
               itemInventory: 20,
             },
           },
