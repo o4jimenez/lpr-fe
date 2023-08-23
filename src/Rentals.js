@@ -218,7 +218,7 @@ function Rentals() {
             imageUrl: "/image/patio_heater.jpeg",
             itemInfo: {
               itemNumber: 411,
-              itemCost: 65,
+              itemCost: 70,
               itemInventory: 4,
             },
           },
