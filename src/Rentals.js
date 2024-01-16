@@ -234,7 +234,7 @@ function Rentals() {
             imageUrl: "/image/portable_bathroom.jpeg",
             itemInfo: {
               itemNumber: 431,
-              itemCost: 110,
+              itemCost: 120,
               itemInventory: 2,
             },
           },
