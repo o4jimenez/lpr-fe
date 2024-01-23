@@ -118,7 +118,7 @@ function Rentals() {
             imageUrl: "/image/table_round_60.jpeg",
             itemInfo: {
               itemNumber: 212,
-              itemCost: 8,
+              itemCost: 9,
               itemInventory: 10,
             },
           },
