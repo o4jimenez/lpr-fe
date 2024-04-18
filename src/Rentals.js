@@ -193,6 +193,14 @@ function Rentals() {
             },
           },
           {
+            imageUrl: "/image/tent_20x20.jpeg",
+            itemInfo: {
+              itemNumber: 314,
+              itemCost: 130,
+              itemInventory: 1,
+            },
+          },
+          {
             imageUrl: "/image/tent_20x30.jpeg",
             itemInfo: {
               itemNumber: 313,
