@@ -115,6 +115,10 @@ i18n
               itemName: "20ft x 30ft Tent",
               itemDescription: "",
             },
+            314: {
+              itemName: "20ft x 20ft Tent",
+              itemDescription: "",
+            },
             441: {
               itemName: "13ft x 13ft Canopy",
               itemDescription: "",
@@ -264,6 +268,10 @@ i18n
             },
             313: {
               itemName: "20 pies x 30 pies Carpa",
+              itemDescription: "",
+            },
+            314: {
+              itemName: "20 pies x 20 pies Carpa",
               itemDescription: "",
             },
             441: {
