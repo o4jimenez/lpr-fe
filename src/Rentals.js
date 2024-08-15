@@ -96,7 +96,7 @@ function Rentals() {
             imageUrl: "/image/waterslide_blue.jpeg",
             itemInfo: {
               itemNumber: 151,
-              itemCost: 160,
+              itemCost: 170,
               itemInventory: 1,
             },
           },
@@ -234,7 +234,7 @@ function Rentals() {
             imageUrl: "/image/snowcone_machine.jpeg",
             itemInfo: {
               itemNumber: 421,
-              itemCost: 50,
+              itemCost: 60,
               itemInventory: 1,
             },
           },
