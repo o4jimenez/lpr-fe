@@ -44,7 +44,7 @@ const OrderForm = ({ itemList }) => {
         <form
           id='orderForm'
           method='post'
-          action="https://formsubmit.co/louispartyrentalinfo@gmail.com"
+          action="https://formspree.io/f/xdkpgyyk"
         >
           <FormInput name='clientName' type='text' />
           <FormInput name='date' type='date' />
