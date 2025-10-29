@@ -14,7 +14,7 @@ function Contact() {
           <label className='section-header'></label>
           <form
             id='contact-form'
-            action='https://formsubmit.co/60d1aa45d556a34594c8c74ace8e8295'
+            action='https://formspree.io/f/xdkpgyjk'
             method='POST'
           >
             <FormInput name='clientName' type='text' />
