@@ -44,7 +44,7 @@ const OrderForm = ({ itemList }) => {
         <form
           id='orderForm'
           method='post'
-          action="https://formsubmit.co/60d1aa45d556a34594c8c74ace8e8295"
+          action="https://formsubmit.co/louispartyrentalinfor@gmail.com"
         >
           <FormInput name='clientName' type='text' />
           <FormInput name='date' type='date' />
