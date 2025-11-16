@@ -17,7 +17,7 @@ function Home() {
         <h2>{t("home.greeting")}</h2>
         <p>{t("home.description.part1")}</p>
         <p>{t("home.description.part2")}</p>
-        <p>{t("home.description.part3")}</p>
+        <p><b>{t("home.description.part3")}<b/></p>
       </section>
     </main>
   );
