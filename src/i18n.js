@@ -29,7 +29,7 @@ i18n
               part1: "We provide Tents, Jumpers, Tables, Chairs, and more.",
               part2:
                 "We are here for all your party rental needs. We take pride in providing the best customer service so your party runs smoothly.",
-              part3: "Delivery charge may vary.",
+              part3: "DELIVERY CHARGE MAY VARY.",
             },
           },
           catalog: {
@@ -184,7 +184,7 @@ i18n
               part1: "Tenemos Carpas, Brincolín , Mesas, Sillas, y más",
               part2:
                 "Estamos aqui para todos sus necesidades de fiestas. Nos enorgullece darte el mejor servicio para que su fiesta será sin problema.",
-              part3: "Coste de entrega puede variar",
+              part3: "COSTE DE ENTREGA PUEDE VARIAR",
             },
           },
           catalog: {
