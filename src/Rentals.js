@@ -96,7 +96,7 @@ function Rentals() {
             imageUrl: "/image/waterslide_blue.jpeg",
             itemInfo: {
               itemNumber: 151,
-              itemCost: 170,
+              itemCost: 180,
               itemInventory: 1,
             },
           },
@@ -242,7 +242,7 @@ function Rentals() {
             imageUrl: "/image/portable_bathroom.jpeg",
             itemInfo: {
               itemNumber: 431,
-              itemCost: 120,
+              itemCost: 130,
               itemInventory: 2,
             },
           },
